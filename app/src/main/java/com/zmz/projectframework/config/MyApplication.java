@@ -16,12 +16,12 @@ import android.content.Context;
  * @Version: 1.0
  */
 public class MyApplication extends Application {
-    private static Context context;
+    private static Context mContext;
 
     @Override
     public void onCreate() {
         super.onCreate();
-        context = getApplicationContext();
+        mContext = getApplicationContext();
     }
 
     /**
@@ -29,7 +29,9 @@ public class MyApplication extends Application {
      *
      * @return
      */
-    public static Context getContext() {
-        return context;
+    public static Context getIntance() {
+        if (mContext == null)
+            throw new RuntimeException("Context is not init");
+        return mContext;
     }
 }

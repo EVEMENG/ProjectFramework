@@ -36,7 +36,7 @@ public abstract class BaseActivity extends SupportActivity {
     public abstract BaseFragment setRootFragment();//设置根Fragment
 
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
+    public void onCreate(@Nullable Bundle savedInstanceState) {
         //        //强制横屏
 //        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         //设置输入框模式

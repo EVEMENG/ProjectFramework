@@ -6,6 +6,7 @@ import android.preference.PreferenceManager;
 import android.text.TextUtils;
 
 import com.google.gson.Gson;
+import com.zmz.projectframework.config.MyApplication;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -33,7 +34,7 @@ public class PreferenceUtil {
     public static PreferenceUtil getIntance() {
         synchronized (PreferenceUtil.class) {
             if (util == null) {
-                util = new PreferenceUtil(UtilApp.getIntance().getApplicationContext());
+                util = new PreferenceUtil(MyApplication.getIntance().getApplicationContext());
             }
         }
         return util;

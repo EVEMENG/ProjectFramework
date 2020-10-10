@@ -35,7 +35,7 @@ public class LaunchFragment extends BaseFragment implements ITimerListener, View
     private AppCompatTextView launcher_timer_tv;
 
     private Timer mTimer = null;
-    private int mCount = 5;
+    private int mCount = 3;
     private ILoginState mILoginState;
 
     @Override
