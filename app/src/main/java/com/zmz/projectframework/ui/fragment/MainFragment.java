@@ -9,7 +9,7 @@ import com.zmz.projectframework.base.BaseFragment;
 /**
  * @ProjectName: ProjectFramework
  * @Package: com.zmz.projectframework.ui.fragment
- * @ClassName: HomeFragment
+ * @ClassName: MainFragment
  * @Description: java类作用描述
  * @Author: 作者名
  * @CreateDate: 2020/10/10 15:48
@@ -18,10 +18,9 @@ import com.zmz.projectframework.base.BaseFragment;
  * @UpdateRemark: 更新说明：
  * @Version: 1.0
  */
-public class HomeFragment extends BaseFragment {
+public class MainFragment extends BaseFragment {
     @Override
     public void onInitView(@Nullable Bundle savedInstanceState) {
-
     }
 
     @Override
@@ -31,6 +30,6 @@ public class HomeFragment extends BaseFragment {
 
     @Override
     public Object getResId() {
-        return R.layout.fragment_home;
+        return R.layout.fragment_main;
     }
 }

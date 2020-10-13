@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ProjectFramework</string>
+    <string name="tab_first">首页</string>
+    <string name="tab_second">互动交流</string>
+    <string name="tab_third">业务办理</string>
+    <string name="tab_fourth">我的</string>
 </resources>
